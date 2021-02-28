@@ -1,0 +1,248 @@
+
+/* same CSS code as started individual grid rows */
+
+body {
+    margin: 2% 5%;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-rows: 20% auto auto auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60pt;
+    padding-bottom: 20pt;
+    background-color: lightblue;
+}
+
+.whitebackground {
+    background-color: whitesmoke;
+    padding: 10pt 100pt;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+section:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+}
+
+.has-background {
+    background-color: lightblue;
+    padding: 5pt 80pt;
+}
+
+h1, h2, p, h4 {
+    margin: 0;
+}
+
+h1 {
+   font-size: 30pt;
+}
+
+
+ul {
+    margin: 0 20pt;
+}
+
+.bluehr {
+    height: 2pt;
+    width: 300pt;
+    margin: 30pt auto 10pt auto;
+    background-color: lightblue;
+}
+
+
+
+.line {
+    height: 2pt;
+    width: 270pt;
+    margin: 0 auto 10pt auto;
+    background-color: lightblue;
+}
+
+
+.picwrapper {
+     height: 200px;
+     width: 200px;
+     border-radius: 100%;
+     overflow: hidden;
+     margin: 16pt auto; 
+}
+.profile-pic {
+    width: 200px;
+    height: 220px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.iconwrapper {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.contactinfo {
+    padding-top: 10pt;
+    display: block;
+}
+
+.skills {
+    background-color: lightblue;
+    margin: 4pt 25pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.lowercase {
+    text-transform: initial;
+}
+
+/* how to get the h3 in here to have the right padding 
+like education?? */
+.expertise {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* what is the easiest way to make the phone# and 
+email flush and centered with the images?? */
+/*  
+.reachme > p {
+    display: inline-block;
+} 
+
+img {
+    height: 20%;
+}
+
+#phone {
+    margin-top: 10pt
+}
+
+#envelope {
+    margin-top: 10pt
+}
+
+div {
+    display: inline-block;
+}
+*/
+
+/* with the grid template method - it did not really work, 
+and I had to remove the wrapping sections */
+
+/* body {
+    margin: auto 50pt;
+    display:grid;
+    grid-template-columns: repeat(6fr, auto);
+    grid-template-rows: 10% auto 2%  auto 2% auto;
+    grid-template-areas: 
+    "main main main main main main"
+    "art1 art1 art2 art2 art3 art3"
+    "header1 header1 header1 header1 header1 header1" 
+    "art4 art4 art5 art5 art6 art6"
+    "art7 art7 art7 art8 art8 art8"
+    "header2 header2 header2 header2 header2 header2";
+    
+}
+
+main {
+    grid-area: main;
+}
+
+article:nth-of-type(1) {
+    grid-area: art1;
+}
+
+article:nth-of-type(2) {
+    grid-area: art2;
+}
+
+article:nth-of-type(3) {
+    grid-area: art3;
+}
+
+article:nth-of-type(4) {
+    grid-area: art4;
+}
+
+article:nth-of-type(5) {
+    grid-area: art5;
+}
+
+article:nth-of-type(6) {
+    grid-area: art6;
+}
+
+article:nth-of-type(7) {
+    grid-area: art7;
+}
+article:nth-of-type(8) {
+    grid-area: art8;
+}
+
+header:nth-of-type(1) {
+    grid-area: header1;
+}
+
+header:nth-of-type(2) {
+    grid-area: header2;
+}
+
+
+main {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+article {
+    align-self: center;
+}
+
+.profile-pic {
+    width: 110pt;
+    height: 110pt;
+}
+
+.line {
+    height: 2pt;
+    width: 270pt;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+}
+*/
