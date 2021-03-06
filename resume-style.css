@@ -4,9 +4,8 @@ body {
 }
 
 .maincontainer {
-    height: 100%;
     width: 90%;
-    margin: 0 auto;
+    margin: 10px auto 30px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 180px 1fr 60px 1fr 80px 1fr;
