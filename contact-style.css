@@ -1,0 +1,133 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#272121;
+    padding: 1%;
+  }
+img {
+    width: 30%;
+}
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  
+  h2 {
+      color: #bedbbb;
+      font-family: 'Lato', sans-serif;
+      margin: 0 0 2% 0;
+      
+  }
+
+  form {
+    background-color: #bedbbb;
+    padding: 12%;
+  }
+
+  h4 {
+      text-align: center;
+      background-color: #98ded9;
+      padding: 1% ;
+  }
+
+h4, label {
+    font-family: 'Lato', sans-serif;
+ }
+
+label {
+    line-height: 1.5;
+}
+
+.submit {
+    text-align: center;
+    margin-top: 12%;
+}
+
+input[type="email"], textarea {
+    border:none;
+    width: 100%;
+    resize: none;
+    padding: 3%;
+    font-family: 'Lato', sans-serif;
+}
+
+
+input[type=submit] {
+    border: none;
+    padding: 3% 10%;
+    background-color:#272121;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+   body {
+       background-color: #98ded9;
+       margin: 0;
+   }
+    form {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr, 20%;
+        grid-column-gap: 5%;
+        padding: 2%;
+        margin: 2% auto;
+        box-shadow: 10px 10px 8px;
+        border: 1px solid black;
+    }
+
+    .first {
+        grid-row: 1/span 1;
+        grid-column: 1/span 1;
+    }
+
+    .middle {
+        grid-row: 1/span 1;
+        grid-column: 2/span 1;
+    }
+
+    .last {
+        grid-row: 1/span 1;
+        grid-column: 3/span 1;
+    }
+    .submit {
+        grid-row: 2/span 1;
+        grid-column: 1/span 3;
+        background-color: #bedbbb;
+        margin-top: 0;
+    }
+    textarea {
+        height: 50%;
+    }
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+    }
+    input[type=submit] {
+        font-size: 20px;
+        padding: 1% 5%
+    }
+    input[type=submit]:hover {
+        color: black;
+        background-color:yellowgreen;
+    }
+    
+    h2 {
+        margin: initial;
+    }
+    img {
+        width: 100px;
+    }
+
+    h4 {
+        padding: 2%;
+    }
+    .notcenter {
+        text-align: initial;
+    }
+}

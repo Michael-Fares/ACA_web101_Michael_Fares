@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contact-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header>
+     <img src="./contact.jpg" alt="Picture of Michael Fares">
+    <h1>Contact Me</h1>
+    <h2>Michael Fares</h2>
+ </header>
+<main>
+<form action="result.html" method="GET">
+
+<!-- email and text area -->
+<section class="first">
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" required><br>
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" minlength="20" maxlength="500" required></textarea>
+</section>
+<!-- A section of checkboxes that asks the user: "How did you hear about me? -->
+<section class="middle">
+    <h4>How did you hear about me?</h4>
+
+    <input type="checkbox" id="classmate">
+    <label for="classmate">Classmate</label><br>
+    <input type="checkbox" id="resumesubmission">
+    <label for="resumesubmission">Resume Submission</label><br> 
+    <input type="checkbox" id="LinkedIn">
+    <label for="LinkedIn">LinkedIn</label><br>
+    <input type="checkbox" id="codingacademyrec">
+    <label for="codingacademyrec">Coding Academy Rec</label><br>
+</section>
+
+<!-- A section of radio buttons that asks if the user wants to be contacted back: Yes or No -->
+<section class="last">
+    <h4>Would you like to be contacted back?</h4>
+
+    <input type="radio" id="yes" name="yesorno" value="yes" required>
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="yesorno" value="no">
+    <label for="no">No</label><br>
+
+<!-- Offer to give an optional Birthday Wish by submitting their birth date through a date input. -->
+    <h4 class="notcenter">Optional: enter your birthday to receive a birthday wish!</h4>
+    
+    <label for="bday">Your Birthday:</label>
+    <input type="date" id="bday"><br><br>
+</section>
+<div class="submit">
+    <input type="submit" value="Submit">
+</div>
+</form>
+</main>
+</body>
+</html>
