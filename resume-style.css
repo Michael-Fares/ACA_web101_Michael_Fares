@@ -159,3 +159,33 @@ ul {
     padding-bottom: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+    .maincontainer, .work {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .margintop {
+        margin-top: 5%;
+    }
+    .photo {
+        order: -1;
+    }
+    h1,h2 {
+        text-align: center;
+    }
+    .whitebackground {
+        background-color: lightblue;
+    }
+
+    section, .experience {
+        width: 100%;
+    }
+    h1, h2 {
+        margin: 0;
+        padding: 0;
+    }
+    .skills {
+       padding: 2% 0;
+    }
+  }

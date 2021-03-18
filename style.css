@@ -10,8 +10,10 @@ body {
 
   /* What kind of selector is this? - a class selector*/
   .logo {
-    width: 100px;
+    width: 90px;
     margin: 3% 10%;
+    background-color: #bbeedd;
+    border-radius: 50%;
   }
 
   header {
@@ -43,6 +45,7 @@ body {
   }
 
   nav {
+    grid-column: 2/3;
     display: flex;
     justify-content: flex-end;
     padding-right: 3%;
@@ -94,6 +97,11 @@ body {
     padding: 3%;
     background: #98ded9;
     border: none;
+  }
+
+  button:hover {
+    background-color: #bedbbb;
+    outline: 2px solid black;
   }
 
   @media only screen and (max-width: 414px) { 
