@@ -1,8 +1,18 @@
-
 body {
     font-family: 'Lato', sans-serif;
 }
 
+i {
+    color: lightblue;
+    font-size: 40px;
+    margin: auto 3%;
+}
+i:hover {
+    color: lightslategray;
+}
+.phonenumber, .email {
+    display: none;
+}
 .maincontainer {
     width: 90%;
     margin: 10px auto 30px auto;
@@ -102,6 +112,7 @@ ul {
 .picwrapper {
     width: 200px;
     height: 200px;
+    margin: 5%;
 }
 .profile-pic {
    width: 60%;
@@ -119,7 +130,6 @@ ul {
 
 .contactinfo {
     padding-top: 10pt;
-    display: block;
 }
 
 h1, h2, h3, h4 {
