@@ -15,7 +15,8 @@ setTimeout(function(){
 const pulse = (element) => {
   if(!element.classList.contains('animate__animated','animate__pulse')) {
     element.classList.add('animate__animated','animate__pulse')
-    element.style.animationDuration = "0.5s"
+    element.style.animationDuration = "0.5"
+    element.style.animationIterationCount = "3"
     } else {
     element.classList.remove('animate__animated','animate__pulse')
     }
@@ -25,14 +26,24 @@ const pulse = (element) => {
     }, 100);
   }
 
+  const flip = (element) => {
+    if(!element.classList.contains('animate__animated','animate__flipInX')) {
+      element.classList.add('animate__animated','animate__flipInX')
+      element.style.animationDuration = "0.5s"
+      } else {
+      element.classList.remove('animate__animated','animate__flipInX')
+      }
+      // Add animation classes back to our element after 1 milisecond;
+      setTimeout(function(){
+        element.classList.add('animate__animated','animate__flipInX');
+      }, 100);
+    }
 
-// why doesn't this work??
-
-const hideImage = (element) => {
-  element.style.opacity = "0.5"
+const hideElement = (element) => {
+  element.style.display = "none"
 }
-const showImage = (element) => {
-  element.style.opacity = "1"
+const showElement = (element) => {
+  element.style.display= "block"
 }
 
 const showPhoneNumber = () => {
